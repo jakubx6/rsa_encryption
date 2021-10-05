@@ -5,26 +5,26 @@ Windows application using algorithm Rivest–Shamir–Adleman (RSA) cryptosystem
 ### Description of the algorithm
 
 I. Keys generation:  
-    1. Find two prime numers (p,q).  
-    2. Calculate (n): n = (p*q).  
-    3. Calculate Euler function for n: Ø = (p-1)*(q-1).  
-    4. Find (e) from: NWD(e,Ø) = 1, where 1 < e < n.  
-    5. Find (d): d*e mod Ø = 1.  
+&nbsp;&nbsp;1. Find two prime numers (p,q).  
+&nbsp;&nbsp;2. Calculate (n): n = (p*q).  
+&nbsp;&nbsp;3. Calculate Euler function for n: Ø = (p-1)*(q-1).  
+&nbsp;&nbsp;4. Find (e) from: NWD(e,Ø) = 1, where 1 < e < n.  
+&nbsp;&nbsp;5. Find (d): d*e mod Ø = 1.  
   
-   Public key (e,n)  
-   Private key (d,n)  
+&nbsp;&nbsp;Public key (e,n)  
+&nbsp;&nbsp;Private key (d,n)  
   
 II. Text encryption:  
-    1. Provide (e,n).  
-    2. Change each letter to ASCII value.  
-    3. Calculate value (z) of each letter: z = t^e mod n.  
-    4. Print (z) value of each letter.  
+&nbsp;&nbsp;1. Provide (e,n).  
+&nbsp;&nbsp;2. Change each letter to ASCII value.  
+&nbsp;&nbsp;3. Calculate value (z) of each letter: z = t^e mod n.  
+&nbsp;&nbsp;4. Print (z) value of each letter.  
       
 III. Text decryption:  
-    1. Provide (d,n).  
-    2. Read each value (values have to be separated by " ").  
-    3. Calculate value (t): t = c^d mod n.  
-    4. Print letter matching to ASCII value (t).  
+&nbsp;&nbsp;1. Provide (d,n).  
+&nbsp;&nbsp;2. Read each value (values have to be separated by " ").  
+&nbsp;&nbsp;3. Calculate value (t): t = c^d mod n.  
+&nbsp;&nbsp;4. Print letter matching to ASCII value (t).  
   
 ### Program layout
 <table>
